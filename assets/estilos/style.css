@@ -21,10 +21,39 @@
     margin: 0px;
     box-sizing: border-box;
 }
-h1#eu{
-    font-size: 1.2em;
+body, html{
+    background-color: white;
 }
-img{
+h1#eu{
+    font-family: 'Raleway', sans-serif;;
+    font-size: 1.2em;
+    margin: 40px;
+    color: black;
+}
+div#projetos{
+    background-color: white;
+}
+div#projetos > p{
+    color: black;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 8px;
+}
+div#projetos> a >img{
+    display: block;
     margin: auto;
     width: 350px;
+    padding: 15px;
 }
+div#sobremim{
+    
+}
+div#links > ul > li{
+    margin: 20px;
+}
+div#links > ul > li > a{
+    text-decoration: none;
+    color: #575458;
+    margin: 30px;
+}
+
