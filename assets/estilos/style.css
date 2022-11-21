@@ -21,4 +21,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+h1#eu{
+    font-size: 1.2em;
+}
+img{
+    margin: auto;
+    width: 350px;
+}
