@@ -17,5 +17,29 @@
     padding: 0px;
     margin: 0px;
 }
+body, html{
+    background-color: #121212;
+}
+header{
+    background-color: #121212;
+}
+#eu{
+    color: #00d2df;
+    font-family: 'Raleway', sans-serif;
+}
+span#hamburger{
+    display: block;
+    color: #c4c4c4;
+    text-align: right;
+    transform: ;
+}
+header > nav > ul#menu{
+    display: none;
+}
 
-
+h1{
+    color: #ffffff;
+}
+li{
+    color: #c4c4c4;
+}
