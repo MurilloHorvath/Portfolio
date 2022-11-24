@@ -13,55 +13,22 @@
     --fonte-nome: 'Raleway', sans-serif;
 
 }
-*{
+
+body, html{
+    background-color: var(--dark200);
+    color: var(--lightgray);
     font-family: var(--fonte-padrao);
+    letter-spacing: 1px;
     padding: 0px;
     margin: 0px;
 }
 
-body, html{
-    background-color: var(--dark200);
-}
-header{
-    background-color: var(--dark);
-    border-bottom: 1px solid var(--light);
-    height: 60px;
-}
-#eu{
-    color: var(--blue);
-    font-family: var(--fonte-nome);
-    font-size: 1.6em;
-    margin: 30px;
-}
-span#hamburger{
-    display: block;
-    color: var(--lightgray);
-    text-align: right;
-    font-size: 3em;
-    transform: translate(-8%, -150%);
-}
-header > nav > ul#itens{
-    display: none;
-}
-section>div#home{
-    margin-top: 130px;
-    text-align: center;
-}
-section>div#home>h1{
-    color: var(--light);
-    font-size: 2em;
-}
-section>div#home>span{
-    color: var(--blue);
-    font-size: 1.5em;
-    font-family: var(--fonte-nome);
-}
-div#home>div#link>a{
-    display: block;
-    text-decoration: none;
-    color: var(--light);
-    margin: 40px;
-    padding: 10px;
-    border: 1px solid white;
-    border-color: var(--gradientpink);
-}
+/*--------------inicio do header----------------*/
+
+/*--------------Fim do header----------------*/
+
+
+
+/*--------------inicio do home----------------*/
+
+/*--------------Fim do home----------------*/

@@ -5,37 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murillo Silveira - Portfólio</title>
+    <link rel="shortcut icon" href="assets/imagens/iconesite.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/estilos/style.css">
     <link rel="stylesheet" href="assets/estilos/mediastyle.css">
-    <link rel="shortcut icon" href="assets/imagens/iconesite.png" type="image/x-icon">
+
     <!--Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <nav>
-            <p id="eu">MSH</p>
-            <span id="hamburger" class="material-symbols-outlined" onclick="clickMenu()">
-                menu
-            </span>
-            <ul id="itens">
-                <a href="">
+            <p><a href="#home">MSH</a></p>
+            <button data-menu="button" aria-controls="menu"></button>
+            <ul data-menu="list" id="menu">
+                <a href="#home">
                     <li>Home</li>
                 </a>
-                <a href="">
-                    <li>Sobre Mim</li>
+                <a href="#sobremim">
+                    <li>Sobre mim</li>
                 </a>
-                <a href="">
-                    <li>Experiências</li>
+                <a href="#experiencia">
+                    <li>Experiência</li>
                 </a>
-                <a href="">
+                <a href="#projetos">
                     <li>Projetos</li>
                 </a>
             </ul>
@@ -43,46 +37,62 @@
     </header>
 
     <main>
-        <section>
-            <div id="home">
-                <h1>Bem vindo, eu sou</h1>
-                <span>Murillo Silveira</span>
-                <h1>Desnvolvedor Front-end</h1>
-                <div id="link">
-                    <a href="#">Linkedin</a>
-                    <a href="#">Github</a>
+        <section class="principal_home" id="home">
+            <div class="principal_text">
+                <h1>Olá, eu sou</h1>
+                <p>Murillo Silveira</p>
+                <h1>Desenvovedor Front-end</h1>
+                <div class="principal_link">
+                    <a href="https://www.linkedin.com/in/murillo-silveira-horvath/" target="_blank">
+                        <div class="link_linkedin">
+                            <img src="" alt="">
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/MurilloHorvath">
+                        <div class="link_github">
+                            <img src="" alt="">
+                            <p>GitHub</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div>
-                ilustração animada de um hacker...
+            <div class="principal_img">
+                <img src="" alt="Ilustração mostrando uma pessoa programando...">
             </div>
         </section>
-        <section>
-            <div>
-                foto
+        <section class="sobre-mim" id="sobremim">
+            <div class="sobre-mim_foto">
+                <img src="" alt="selfie de Murillo Silveira">
             </div>
-            <div>
-                descrição
+            <div class="sobre-mim_descricao">
+                <h1>Sobre mim</h1>
+                <h2>Porto Alegre, Rio Grande do Sul</h2>
+                <p>
+                    Descrição do Murillo Silveira
+                </p>
+                <div class="sobre-mim_descricao_links">
+                    <a href="">
+                        <div class="sobre-mim_descricao_links_curriculo">
+                            <img src="" alt="imagem de dowload da nuvem">
+                            <p>Currículo</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="sobre-mim_descricao_links_gmail">
+                            <img src="" alt="imagem de gmail">
+                            <p>Gmail</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
-        <section>
-            <h1>Experiencias</h1>
-            <div>
-                lista com esxperiencias detalhadas
-                curso no senai
-                e em busca de uma oportunidade
-            </div>
-        </section>
-        <section>
-            <h1>Projetos</h1>
-            <div>
-                imagens da pagina principal dos projetos realizados
-            </div>
+        <section class="experiencia" id="experiencia">
+
         </section>
     </main>
 
     <footer>
-        
     </footer>
 
 <script src="assets/js/script.js"></script>
