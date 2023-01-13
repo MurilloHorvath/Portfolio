@@ -4,30 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murillo Silveira - Portfólio</title>
-    <link rel="shortcut icon" href="assets/" type="image/x-icon">
+    <title>Portifólio - Murillo Silveira Horvath</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediastyle.css">
-
-    <!--Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/media-style.css">
 </head>
 <body>
     <header>
         <nav>
             <p><a href="#home">MSH</a></p>
-            <button data-menu="button" aria-controls="menu"></button>
-            <ul data-menu="list" id="menu">
+            <ul id="menu">
                 <a href="#home">
                     <li>Home</li>
                 </a>
-                <a href="#sobremim">
-                    <li>Sobre mim</li>
-                </a>
-                <a href="#experiencia">
-                    <li>Experiência</li>
+                <a href="#sobre">
+                    <li>Sobre Mim</li>
                 </a>
                 <a href="#projetos">
                     <li>Projetos</li>
@@ -35,101 +25,76 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="principal_home" id="home">
-            <div class="principal_text">
+        <section id="home">
+            <div>
                 <h1>Olá, eu sou</h1>
-                <p>Murillo Silveira</p>
-                <h1>Desenvovedor Front-end</h1>
-                <div class="principal_link">
+                <p>Murillo Silveira Horvath</p>
+                <h1>Desenvolvedor Front-End</h1>
+                <div>
                     <a href="https://www.linkedin.com/in/murillo-silveira-horvath/" target="_blank">
-                        <div class="link_linkedin">
-                            <img src="" alt="">
-                            <p>LinkedIn</p>
+                        <div>
+                            <img src="assets/linkedin.png" alt="Icone do Linkedin">
+                            <p>Linkedin</p>
                         </div>
                     </a>
                     <a href="https://github.com/MurilloHorvath">
-                        <div class="link_github">
-                            <img src="" alt="">
+                        <div>
+                            <img src="assets/github.png" alt="Icone do GitHub">
                             <p>GitHub</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="principal_img">
-                <img src="" alt="Ilustração mostrando uma pessoa programando...">
+            <div>
+
             </div>
         </section>
-        <section class="sobre-mim" id="sobremim">
-            <div class="sobre-mim_foto">
-                <img src="" alt="selfie de Murillo Silveira">
+        <section class="sobre-mim" id="sobre">
+            <div>
+                <img src="" alt="">
             </div>
-            <div class="sobre-mim_descricao">
-                <h1>Sobre mim</h1>
-                <h2>Porto Alegre, Rio Grande do Sul</h2>
+            <div class="sobre-mim_texto">
+                <h1>Sobre Mim</h1>
+                <h2>Porto Alegre, Rio Grande do Sul, Brasil</h2>
                 <p>
-                    Descrição do Murillo Silveira
+                    Olá, Sou Programador, Estudo programação com o intuito de criar coisas novas e 
+                    sempre estar aprendendo uma linguagem diferente. Em 2022 conheci muitos cursos 
+                    gratuitos na internet sobre várias linguagens diferentes. Atualmente estou focado 
+                    em estudar Python, na área de API's e Desenvolvimento Web.
                 </p>
-                <div class="sobre-mim_descricao_links">
+                <div class="sobre-mim-texto_descricao">
                     <a href="">
-                        <div class="link_curriculo">
-                            <img src="" alt="">
+                        <div class="sobre-mim_curriculo">
+                            <img src="assets/nuvem.png" alt="Downlaod do currículo">
                             <p>Currículo</p>
                         </div>
                     </a>
-                    <a href="">
-                        <div class="link_gmail">
-                            <img src="" alt="">
-                            <p>Gmail</p>
-                        </div>
-                    </a>
                 </div>
             </div>
         </section>
-        <section class="experiencia" id="experiencia">
-            <h1>Experiência</h1>
+        <section class="projetos" id="projetos">
+            <h1>Projetos</h1>
             <div>
-                <section class="experiencia_lugares">
-                    <ul>
-                        <li>lugares...</li>
-                    </ul>
-                </section>
-                <div class="descricao_experiencia">
-                    <section>
-                        <h2>titulo</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore error fugit omnis optio nemo cupiditate, dolor temporibus sit inventore nulla! Inventore maxime explicabo ad nemo laboriosam quae similique asperiores!</p>
-                    </section>
-                </div>
-            </div>
-        </section>
-        <section class="preojetos" id="projetos">
-            <h1>projetos</h1>
-            <div class="conjunto_projetos">
-                <section class="card_projeto">
-                    <a href="#" target="_blank">
-                        <img src="#" alt="imagem do projeto">
+                <section>
+                    <a href="https://murillohorvath.github.io/Estudos/html%20-%20css/Sites/pag_tela-de-login/index.html" target="_blank">
+                        <img src="assets/imagem-pattern.jpg" alt="imagem do espaço">
                     </a>
-                    <h2>titulo do projeto</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, amet adipisci? Eveniet nisi, non ducimus nulla consectetur veritatis, at molestias quibusdam porro explicabo animi consequatur quaerat necessitatibus voluptatum, quidem temporibus.
-                    </p>
-                    <span>tecnologias utilizadas</span>
-                    <a href="#" target="_blank">
-                        <div class="botao_card_projeto">
-                            <img src="#" alt="imagem de uma corrente representado link">
-                            visualizar
+                    <h2>Tela de Login</h2>
+                    <p>Projeto de finalização do curso de HTML5 e CSS3 do Gustavo Guanabara, Curso em video</p>
+                    <span>Tecnologias utilizadas: HTML5 e CSS3</span>
+                    <a href="https://murillohorvath.github.io/Estudos/html%20-%20css/Sites/pag_tela-de-login/index.html" target="_blank">
+                        <div>
+                            <img src="assets/link.png" alt="Imagem do espaço Utilizada para realizar meu projeto de finalização do curso de HTML e CSS">
+                            Acessar
                         </div>
                     </a>
                 </section>
             </div>
         </section>
     </main>
-
     <footer>
-        <p>Portfólio Desenvolvido por Murillo Silveira Horvath</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/murillo-silveira-horvath/" target="_blank">Murillo Silveira Horvath</a></p>
     </footer>
-
-<script src="js/script.js"></script>
 </body>
 </html>
