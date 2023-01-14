@@ -1,0 +1,64 @@
+/* 
+Paleta de cores:
+1- #DCF2E6;
+2- #36403A;
+3- #BFBFBF;
+4- #595959;
+5- #262626;
+
+Fontes:
+Inter
+https://fonts.google.com/specimen/Inter?query=inter&preview.text=Habilidades&preview.text_type=custom
+
+Righteous
+https://fonts.google.com/specimen/Righteous?preview.text=%3CMSH%3E&preview.text_type=custom
+
+
+*/
+
+:root{
+    --cor0:#DCF2E6;
+    --cor1:#36403A;
+    --cor2:#BFBFBF;
+    --cor3:#595959;
+    --cor4:#262626;
+
+    --fonte-padrao: 'Inter', sans-serif;
+    --fonte-destaque: 'Righteous', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 9vh;
+    border-bottom: 1px solid var(--cor4);
+}
+
+main{
+    background-color: var(--cor0);
+    width: 100vw;
+    height: 90vh;
+    font-family: var(--fonte-padrao);
+}
+
+div#perfil > img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+div#titulo > h1{
+    text-align: center;
+    font-size: 1em;
+}
+
+div#titulo > p{
+    text-align: center;
+    font-size: 1.5em;
+}
