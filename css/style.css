@@ -17,11 +17,9 @@ https://fonts.google.com/specimen/Righteous?preview.text=%3CMSH%3E&preview.text_
 */
 
 :root{
-    --cor0:#DCF2E6;
-    --cor1:#36403A;
-    --cor2:#BFBFBF;
-    --cor3:#595959;
-    --cor4:#262626;
+    --cor1:#BFBFBF;
+    --cor2:#595959;
+    --cor3:#262626;
 
     --fonte-padrao: 'Inter', sans-serif;
     --fonte-destaque: 'Righteous', cursive;
@@ -30,20 +28,20 @@ https://fonts.google.com/specimen/Righteous?preview.text=%3CMSH%3E&preview.text_
 *{
     margin: 0px;
     padding: 0px;
+    list-style: none;
+    text-decoration: none;
 }
 
-header{
-    background-color: var(--cor1);
-    width: 100vw;
-    height: 9vh;
-    border-bottom: 1px solid var(--cor4);
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
 }
 
 main{
-    background-color: var(--cor0);
-    width: 100vw;
-    height: 90vh;
-    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
 }
 
 div#perfil > img{

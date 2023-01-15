@@ -8,31 +8,32 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mediastyle.css">
+    <link rel="stylesheet" href="../css/menu-mobile.css">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <p><a href="index.html">&lt;MSH&gt;</a></p>
-            <ul id="menu">
-                <a href="sobre-mim/index.html">
-                    <li>Sobre-Mim</li>
-                </a>
-                <a href="habilidades/index.html">
-                    <li>Habilidades</li>
-                </a>
-                <a href="experiencia/index.html">
-                    <li>Experiências</li>
-                </a>
-                <a href="projetos/index.html">
-                    <li>Projetos</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <a href="#" class="logo">&lt;MSH&gt;</a>
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Sobre-Mim</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Habilidades</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Experiências</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
     <main>
         <div id="perfil">
             <img src="../assets/perfil.png" alt="Icone do Murillo">
@@ -66,5 +67,7 @@
             <p>Desenvolvido por <a href="https://www.linkedin.com/in/murillo-silveira-horvath/" target="_blank">Murillo Silveira Horvath</a></p>
         </div>
     </main>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
