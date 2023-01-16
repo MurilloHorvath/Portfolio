@@ -1,10 +1,4 @@
 /* 
-Paleta de cores:
-1- #DCF2E6;
-2- #36403A;
-3- #BFBFBF;
-4- #595959;
-5- #262626;
 
 Fontes:
 Inter
@@ -13,13 +7,20 @@ https://fonts.google.com/specimen/Inter?query=inter&preview.text=Habilidades&pre
 Righteous
 https://fonts.google.com/specimen/Righteous?preview.text=%3CMSH%3E&preview.text_type=custom
 
-
 */
 
 :root{
-    --cor1:#BFBFBF;
-    --cor2:#595959;
-    --cor3:#262626;
+    --blue:#00D2DF;
+    --dark:#121212;
+    --dark200:#151515;
+    --gray-light:#C4C4C4; 
+    --light:#FFFFFF;
+
+    --pink:#D24074; 
+    --purple:#6518B4;
+
+    --light-purple:#9358F7;
+    --light-blue:#10D7E2;
 
     --fonte-padrao: 'Inter', sans-serif;
     --fonte-destaque: 'Righteous', cursive;
@@ -30,6 +31,7 @@ https://fonts.google.com/specimen/Righteous?preview.text=%3CMSH%3E&preview.text_
     padding: 0px;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -37,11 +39,24 @@ body{
     height: 100%;
     overflow: hidden;
     font-family: var(--fonte-padrao);
-    background-color: var(--cor3);
+    background-color: var(--dark200);
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--dark);
+}
+
+.logo{
+    margin: 20px;
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--blue);
 }
 
 main{
-    background-color: var(--cor3);
+    background-color: var(--dark200);
 }
 
 div#perfil > img{
@@ -50,13 +65,72 @@ div#perfil > img{
     width: 200px;
     height: 200px;
 }
-
+div#titulo{
+    margin: 20px;
+}
 div#titulo > h1{
     text-align: center;
     font-size: 1em;
+    color: var(--light);
 }
 
 div#titulo > p{
     text-align: center;
     font-size: 1.5em;
+    color: var(--blue);
+}
+
+div#descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+div.botoes-fundo{
+    background: linear-gradient(to right, var(--pink),var(--purple));
+    width: 170px;
+    height: 70px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+div.botoes-fundo:hover{
+    background: linear-gradient(to right, var(--light-purple),var(--light-blue));
+}
+
+div.botoes-frente{
+    background-color: var(--dark200);
+    border-radius: 20px;
+    text-align: center;
+    width: 166px;
+    height: 66px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    color: var(--light);
+
+}
+
+div#botoes-github>p{
+    padding: 25px;
+}
+
+div#botoes-linkedin>p{
+    padding: 20px;
+}
+
+div#botoes-email>p{
+    padding: 30px;
+}
+
+div#rodape{
+    color: var(--gray-light);
+    text-align: center;
+}
+
+div#rodape>p>a{
+    color: var(--blue);
 }

@@ -15,24 +15,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
         <a href="#" class="logo">&lt;MSH&gt;</a>
-        <div class="hamburger">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
+        <div class="container">
+            <div class="hamburger">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div>
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="sobre-mim/index.html" class="menu-link">Sobre-Mim</a></li>
+                        <li class="menu-item"><a href="habilidades/index.html" class="menu-link">Habilidades</a></li>
+                        <li class="menu-item"><a href="experiencia/index.html" class="menu-link">Experiências</a></li>
+                        <li class="menu-item"><a href="projetos/index.html" class="menu-link">Projetos</a></li>
+                    </ul>
+                </nav>
+            </aside>
         </div>
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Sobre-Mim</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Habilidades</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Experiências</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                </ul>
-            </nav>
-        </aside>
-    </div>
+    </header>
 
     <main>
         <div id="perfil">
@@ -43,25 +45,31 @@
             <p>Murillo Silveira Horvath</p>
             <h1>Desenvolvedor Front-End</h1>
         </div>
-        <div id="botoes">
-            <a href="">
-                <div>
-                    <img src="" alt="GitHub">
-                    <p>GitHub</p>
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    <img src="" alt="Linkedin">
-                    <p>Linkedin</p>
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    <img src="" alt="Email">
-                    <p>Email</p>
-                </div>
-            </a>
+        <div id="descricao">
+            <div class="botoes-fundo">
+                <a href="">
+                    <div class="botoes-frente" id="botoes-github">
+                        <img src="../assets/guthub.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                </a>
+            </div>
+            <div class="botoes-fundo">
+                <a href="">
+                    <div class="botoes-frente" id="botoes-linkedin">
+                        <img src="../assets/linkedin.png" alt="Linkedin">
+                        <p>Linkedin</p>
+                    </div>
+                </a>
+            </div>
+            <div class="botoes-fundo">
+                <a href="">
+                    <div class="botoes-frente" id="botoes-email">
+                        <img src="../assets/email.png" alt="Email">
+                        <p>Email</p>
+                    </div>
+                </a>
+            </div>
         </div>
         <div id="rodape">
             <p>Desenvolvido por <a href="https://www.linkedin.com/in/murillo-silveira-horvath/" target="_blank">Murillo Silveira Horvath</a></p>

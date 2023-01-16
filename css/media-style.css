@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*typical device breakpoints
+
+Desktops: (min-width: 1281px)
+Laptops, desktops: (min-width: 1025px) and (max-width: 1280px)
+Tablets, ipads: (min-width: 768px) and (max-width: 1024px)
+Tablets de baixa resolução, celulares: (min-width: 482px) and (max-width: 767px)
+A maioria dos smartphones móveis: (min-width:320px) and (max-width: 480px)
+
+*/
+
+/* @media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+} */
