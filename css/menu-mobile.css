@@ -4,18 +4,27 @@
     --dark200:#151515;
     --gray-light:#C4C4C4; 
     --light:#FFFFFF;
-    --gradient-pink:linear-gradient(#D24074, #6518B4);
-    --gradient-purple:linear-gradient(#9358F7, #10D7E2);
+
+    --pink:#D24074; 
+    --purple:#6518B4;
+
+    --light-purple:#9358F7;
+    --light-blue:#10D7E2;
+
+
+    
+    --fonte-padrao: 'Inter', sans-serif;
+    --fonte-destaque: 'Righteous', cursive;
 }
 
-@media screen and (min-width:320px) and (max-width: 480px) {
+@media screen and (min-width:320px) and (max-width: 767px) {
     .hamburger{
         width: 2rem;
         height: 2rem;
         position: fixed;
         z-index: 5;
         right: 1.5rem;
-        top: 1.5rem;
+        top: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -82,7 +91,7 @@
     }
     
     .menu-link{
-        font-family:sans-serif;
+        font-family: var(--fonte-padrao);
         font-size: 2rem;
         color: var(--light);
         transition: color .7s;
