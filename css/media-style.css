@@ -41,12 +41,8 @@ A maioria dos smartphones móveis: (min-width:320px) and (max-width: 480px)
     div.cabeçalho{
         display: flex;
         flex-direction: row;
-        padding-top: 22px;
+        line-height: 100px;
         margin-left: 30%;
-    }
-
-    .separar{
-        border-right: 1px solid var(--light);
     }
 
     .menu-link{
@@ -75,12 +71,8 @@ A maioria dos smartphones móveis: (min-width:320px) and (max-width: 480px)
     div.cabeçalho{
         display: flex;
         flex-direction: row;
-        padding-top: 22px;
+        line-height: 100px;
         margin-left: 50%;
-    }
-
-    .separar{
-        border-right: 1px solid var(--light);
     }
 
     .menu-link{
