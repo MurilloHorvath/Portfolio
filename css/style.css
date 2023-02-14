@@ -1,137 +1,197 @@
-/* 
-
-Fontes:
-Inter
-https://fonts.google.com/specimen/Inter?query=inter&preview.text=Habilidades&preview.text_type=custom
-
-Righteous
-https://fonts.google.com/specimen/Righteous?preview.text=%3CMSH%3E&preview.text_type=custom
-
-*/
-
 :root{
-    --blue:#00D2DF;
-    --dark:#121212;
-    --dark200:#151515;
-    --gray-light:#C4C4C4; 
-    --light:#FFFFFF;
+    --dark100: #252627;
+    --dark200: #292a2d;
 
-    --pink:#D24074; 
-    --purple:#6518B4;
+    --light100: #fafafa;
+    --light200: #ffffff;
 
-    --light-purple:#9358F7;
-    --light-blue:#10D7E2;
+    --font-color1: #cdcdcd;
+    --font-color2: #505050;
+
+    --green-blue: #38D7BB;
+    --pink: #F60382;
+    --white: #F6EDE8;
+
+    --linear1: linear-gradient(to right, #F60382 , #F6EDE8 , #38D7BB );
+    --linear2: linear-gradient(to right, #38D7BB , #F6EDE8 , #F60382 );
 
     --fonte-padrao: 'Inter', sans-serif;
-    --fonte-destaque: 'Righteous', cursive;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-body{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
     font-family: var(--fonte-padrao);
-    background-color: var(--dark200);
+    box-sizing: border-box;
+    color: var(--font-color1);
 }
-
-header{
+ 
+body, html {
+    background-color: var(--dark200);
     width: 100vw;
-    height: 100px; 
-    background-color: var(--dark);
+    height: 100vh;
 }
 
-.logo{
-    margin: 0 16px;
-    line-height: 100px;
-    position: absolute;
-    font-size: 1.8rem;
-    color: var(--blue);
+body, html, #header-container ,#main-container {
+    transition: .3s;
 }
 
-main{
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100vw;
+    height: 50px;
+    background-color: var(--dark100);
+}
+
+#main-container {
     background-color: var(--dark200);
+    width: 100%;
+    height: 500px;
 }
 
-div#perfil > img{
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 200px;
-}
-div#titulo{
-    margin: 20px;
-}
-div#titulo > h1{
-    text-align: center;
-    font-size: 1em;
-    color: var(--light);
+.hide {
+    display: none;
 }
 
-div#titulo > p{
-    text-align: center;
-    font-size: 1.5em;
-    color: var(--blue);
+#header-title{
+    color: var(--green-blue);
+    line-height: 50px;
+    font-size: 1rem;
+    padding: 0 1rem;
 }
 
-div#descricao{
+.bi-sun, .bi-moon-fill {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    line-height: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon-fill {
+    display: none;
+}
+
+#main-container {
+    width: 100vw;
+    height: 80vh;
+}
+
+#text-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
 }
 
-div.botoes-fundo{
-    background: linear-gradient(to right, var(--pink),var(--purple));
-    width: 170px;
-    height: 70px;
-    border-radius: 20px;
-    margin: 10px;
+#main-title h2{
+    font-size: 1rem;
 }
 
-div.botoes-fundo:hover{
-    background: linear-gradient(to right, var(--light-purple),var(--light-blue));
+#main-title p{
+    font-size: 2rem;
+    color: var(--green-blue);
 }
 
-div.botoes-frente{
-    background-color: var(--dark200);
-    border-radius: 20px;
-    text-align: center;
-    width: 166px;
-    height: 66px;
-    margin: 2px;
+#main-container,
+#main-links,
+.link-btn {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    color: var(--light);
-
 }
 
-div#botoes-github>p{
-    padding: 25px;
+#main-links {
+    flex-direction: column;
+    margin: 1rem 0;
 }
 
-div#botoes-linkedin>p{
-    padding: 20px;
+.link-btn-fundo {
+    width: 129px;
+    height: 64px;
+    border-radius: 10px;
+    background: var(--linear1);
+    background-size: 200%;
+    animation: gradient 5s ease infinite;
 }
 
-div#botoes-email>p{
-    padding: 30px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-footer#rodape{
-    color: var(--gray-light);
-    text-align: center;
+.link-btn {
+    width: 125px;
+    height: 60px;
+    background-color: #252627;
+    border-radius: 10px;
+    transform: translate(2px,2px);
+    transition: .5s;
 }
 
-footer#rodape>p>a{
-    color: var(--blue);
+.link-btn:hover {
+    opacity: .8;
+}
+
+.bi-github,
+.bi-linkedin {
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.btn-container{
+    margin: .5rem 0;
+}
+
+#image-container {
+    display: none;
+}
+
+/* Light theme */
+
+
+.light ,.light #header-container {
+    background-color: var(--light200);
+}
+
+.light #main-container {
+    background-color: var(--light100);
+}
+
+.light .link-btn {
+    background-color: var(--light100);
+}
+
+.light .link-btn p , .light .link-btn i {
+    color: var(--font-color2);
+}
+
+.light .bi-moon-fill {
+    display: block;
+    color: var(--font-color2);
+}
+
+.light .bi-sun {
+    display: none;
 }
