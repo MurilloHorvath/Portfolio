@@ -168,6 +168,10 @@ input[type="checkbox"] {
     display: none;
 }
 
+#aba-aberta {
+    color: #F60382;
+}
+
 /* Light theme */
 
 
